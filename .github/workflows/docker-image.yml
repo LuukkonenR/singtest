@@ -21,4 +21,4 @@ jobs:
           registry: ghcr.io
           image_name: LuukkonenR/singtest
           username: ${{ github.actor }}
-          password: ${{ secrets.DS_SING_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
