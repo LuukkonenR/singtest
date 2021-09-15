@@ -11,7 +11,7 @@ RUN apt-get update -qq -y && \
 
 WORKDIR /scripts/
 
-ADD /scripts/
+ADD . /scripts/
 RUN ls 
 RUN ls /scripts/
 ENV LANG='C.UTF-8' LC_ALL='C.UTF-8' DS_BUILD_CPU_ADAM=1 DS_BUILD_FUSED_ADAM=1 DS_BUILD_FUSED_LAMB=1 \
