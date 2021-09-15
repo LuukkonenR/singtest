@@ -25,8 +25,9 @@ RUN pip3 install --upgrade pip && \
     pip3 install tensorboard scikit-learn matplotlib && \
     pip3 install  git+https://github.com/huggingface/transformers && \
     pip3 install  datasets ninja triton && \
-    pip3 install deepspeed --global-option="build_ext" && \
     rm -rf /root/.cache
-    
+
+RUN python3 test.py
+
 RUN ln -sf /usr/bin/python3 /usr/bin/python
 
