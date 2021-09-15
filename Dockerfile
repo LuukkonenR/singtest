@@ -18,7 +18,7 @@ ENV LANG='C.UTF-8' LC_ALL='C.UTF-8' DS_BUILD_CPU_ADAM=1 DS_BUILD_FUSED_ADAM=1 DS
   
   
  
-RUN pip3 install --upgrade && \ 
+RUN pip3 install --upgrade pip && \ 
     pip3 install --upgrade setuptools && \
     pip3 install --upgrade  wheel && \
     pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html && \
