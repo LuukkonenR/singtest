@@ -9,8 +9,9 @@ RUN apt-get update -qq -y && \
         git && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /
+WORKDIR /scripts/
 
+ADD /scripts/
 
 ENV LANG='C.UTF-8' LC_ALL='C.UTF-8' DS_BUILD_CPU_ADAM=1 DS_BUILD_FUSED_ADAM=1 DS_BUILD_FUSED_LAMB=1 \
   DS_BUILD_SPARSE_ATTN=1 DS_BUILD_TRANSFORMER=1 DS_BUILD_TRANSFORMER_INFERENCE=0 \
